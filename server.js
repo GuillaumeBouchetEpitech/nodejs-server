@@ -1,2 +1,2 @@
 
-require('lib/lib.js');
+require('./lib/lib.js');
