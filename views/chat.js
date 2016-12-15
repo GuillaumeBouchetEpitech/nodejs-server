@@ -1,4 +1,5 @@
 $(function () {
+
     // http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/
     "use strict";
 
@@ -25,7 +26,8 @@ $(function () {
     }
 
     // open connection
-    var connection = new WebSocket('ws://127.0.0.1:1337');
+    // var connection = new WebSocket('ws://<%= host %>:<%= port %>');
+    var connection = new WebSocket('ws://http://server-test-test-server.44fs.preview.openshiftapps.com/:8080');
 
     connection.onopen = function () {
         // first we want users to enter their names
